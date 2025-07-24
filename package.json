@@ -1,0 +1,13 @@
+{
+  "name": "Node.js Command Line Calculator Task",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A command line (cli) calculator application using Node.js that can perform basic arithmetic operations and handle user input interactively.",
+  "main": "calculator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Obi Faith",
+  "license": "ISC"
+}
