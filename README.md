@@ -25,8 +25,17 @@ Node.js installed on your machine
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/nodejs-cli-calculator.git
+git clone https://github.com/ObiFaith/nodejs-cli-calculator.git
 cd nodejs-cli-calculator
+```
+
+### Project Structure
+
+```bash
+nodejs-cli-calculator/
+│
+├── calculator.js   # Main entry point of the calculator app
+└── README.md       # Project documentation
 ```
 
 ### Run the Calculator
@@ -40,7 +49,6 @@ You’ll see a prompt like this:
 ```markdown
 Welcome to Node.js Calculator!
 Select operation:
-
 1. Add
 2. Subtract
 3. Multiply
@@ -68,20 +76,10 @@ const power = (a, b) => a ** b;
 ## 🛠 How It Works
 
 - Prompts the user to select an operation.
-
 - Accepts two numeric inputs (operands).
 - Performs the selected arithmetic operation.
 - Displays the result.
 - Repeats until the user chooses to exit.
-
-## 📁 Project Structure
-
-```bash
-nodejs-cli-calculator/
-│
-├── calculator.js   # Main entry point of the calculator app
-└── README.md       # Project documentation
-```
 
 ## 📄 License
 
