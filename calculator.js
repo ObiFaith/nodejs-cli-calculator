@@ -7,6 +7,10 @@ const power = (a, b) => a ** b;
 const subtract = (a, b) => a - b;
 const multiply = (a, b) => a * b;
 
+// Declare variables
+let option, firstOperand, secondOperand;
+const rl = readline.createInterface({ input, output });
+
 const getValidOperand = async question => {
   let input;
 
@@ -28,9 +32,7 @@ const getResult = async option => {
   return operationFn(firstOperand, secondOperand);
 };
 
-// Declare variables
-let option, firstOperand, secondOperand;
-const rl = readline.createInterface({ input, output });
+
 const operations = ['Add', 'Subtract', 'Multiply', 'Divide', 'Power', 'Exit'];
 
 const operationLen = operations.length;
