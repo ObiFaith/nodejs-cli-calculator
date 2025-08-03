@@ -11,7 +11,7 @@ const multiply = (a, b) => a * b;
 let option, firstOperand, secondOperand;
 const rl = readline.createInterface({ input, output });
 
-const getValidOperand = async question => {
+const getValidOperand = async (question) => {
   let input;
 
   while (true) {
@@ -27,11 +27,10 @@ const getValidOperand = async question => {
   }
 };
 
-const getResult = async option => {
+const getResult = async (option) => {
   const operationFn = [add, subtract, multiply, divide, power][option - 1];
   return operationFn(firstOperand, secondOperand);
 };
-
 
 const operations = ['Add', 'Subtract', 'Multiply', 'Divide', 'Power', 'Exit'];
 

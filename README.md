@@ -49,6 +49,7 @@ You’ll see a prompt like this:
 ```markdown
 Welcome to Node.js Calculator!
 Select operation:
+
 1. Add
 2. Subtract
 3. Multiply
