@@ -1,0 +1,14 @@
+# Build output
+build/
+dist/
+coverage/
+
+# Dependencies
+node_modules/
+.husky/
+
+# Lock files and assets
+package-lock.json
+*.min.js
+*.png
+*.jpg
