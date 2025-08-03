@@ -1,0 +1,24 @@
+name: CI Workflow
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  lint-format:
+    runs-on: ubuntu-latest
+    name: Lint and Format Check
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run ESLint (check only)
+        run: npm run lint
+
+      - name: Run Prettier (check formatting only)
+        run: npm run format:check
